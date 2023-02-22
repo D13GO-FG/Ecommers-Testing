@@ -19,7 +19,7 @@ public class LoginPage extends BasePage{
     @FindBy(how = How.ID, using = "login-button")
     private WebElement btnLogin;
 
-    @FindBy(how = How.CLASS_NAME, using = "error-message-container error")
+    @FindBy(how = How.XPATH, using = "//h3[@data-test='error']")
     private WebElement msgError;
 
     public WebElement getInputUserName() {

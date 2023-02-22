@@ -3,8 +3,7 @@ package Steps;
 import org.openqa.selenium.WebDriver;
 
 public class BaseSteps {
-    private WebDriver driver;
-
+    protected WebDriver driver;
     public BaseSteps(WebDriver driver){
         this.driver = driver;
     }

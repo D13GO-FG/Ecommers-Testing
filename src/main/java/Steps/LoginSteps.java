@@ -2,7 +2,12 @@ package Steps;
 
 import Pages.LoginPage;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class LoginSteps extends BaseSteps{
     LoginPage loginPage;
@@ -12,19 +17,25 @@ public class LoginSteps extends BaseSteps{
     }
 
     public void typeUsername(String username){
-        loginPage.getInputUserName().sendKeys(username);
+        WebElement usernameInput = new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(loginPage.getInputUserName()));
+        //loginPage.getInputUserName().sendKeys(username);
+        usernameInput.sendKeys(username);
     }
 
     public void typePassword(String password){
-        loginPage.getInputPassword().sendKeys(password);
+        WebElement passwordInput = new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(loginPage.getInputPassword()));
+        //loginPage.getInputPassword().sendKeys(password);
+        passwordInput.sendKeys(password);
     }
 
     public void clickLogin(){
         loginPage.getBtnLogin().click();
     }
 
-    public String getText(){
+    public String getTextError(){
         return loginPage.getMsgError().getText();
     }
+
+
 
 }

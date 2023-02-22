@@ -7,7 +7,7 @@ Feature: Login to SwagLabs
   Scenario: Login with valid credentials
 
     When User enters username as "standard_user" and password as "secret_sauce"
-    Then User should be able to login sucessfully and new page open
+    Then User should be able to login successfully and new page open
 
   @InvalidCredentials
   Scenario Outline: Login with invalid credentials
