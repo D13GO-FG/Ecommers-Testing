@@ -1,4 +1,4 @@
-package Tests;
+package TestsUI;
 
 import Steps.LoginSteps;
 import Steps.ProductsSteps;

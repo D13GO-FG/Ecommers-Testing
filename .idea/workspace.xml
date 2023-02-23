@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89987299-ae6a-4fc6-b25d-fb20f6a0ce6d" name="Changes" comment="Adding POM to ProductsPage and change to TDD instanced of BDD.">
+    <list default="true" id="89987299-ae6a-4fc6-b25d-fb20f6a0ce6d" name="Changes" comment="Upgraded to Java 17 to use Jenkins">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataObjects/ItemDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestAPI/TestDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestAPI/TestGets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestAPI/TestPosts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestAPI/TestPuts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestsUI/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/FailureManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestsUI/FailureManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestsUI/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,58 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/2022/Java Projects/ecommers-tests/src/test/java/definitions",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.build"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/2022/Java Projects/ecommers-tests/src/test/java/definitions&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.LoginTest">
-    <configuration name="Feature: LoginPage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginPage.feature" />
-      <option name="GLUE" value="definitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="ecommers-tests" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: LoginPage" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CucumberRunnerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ecommers-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.CucumberRunnerTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}</component>
+  <component name="RunManager" selected="TestNG.TestDelete">
     <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ecommers-tests" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tests.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="TestsUI.LoginTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -93,16 +68,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDelete" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ecommers-tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="TestAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.loginTest" />
+      <option name="PACKAGE_NAME" value="TestAPI" />
+      <option name="MAIN_CLASS_NAME" value="TestAPI.TestDelete" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGets" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ecommers-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestAPI" />
+      <option name="MAIN_CLASS_NAME" value="TestAPI.TestGets" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPosts" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ecommers-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestAPI" />
+      <option name="MAIN_CLASS_NAME" value="TestAPI.TestPosts" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPuts" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ecommers-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestAPI" />
+      <option name="MAIN_CLASS_NAME" value="TestAPI.TestPuts" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -112,10 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestDelete" />
+        <item itemvalue="TestNG.TestGets" />
+        <item itemvalue="TestNG.TestPuts" />
+        <item itemvalue="TestNG.TestPosts" />
         <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="Cucumber Java.Feature: LoginPage" />
-        <item itemvalue="JUnit.CucumberRunnerTests" />
-        <item itemvalue="TestNG.loginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677037119413</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Upgraded to Java 17 to use Jenkins">
+      <created>1677039082068</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677039082068</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,7 +194,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Set up: created files structure and beginning of test case &quot;LoginTest&quot;." />
     <MESSAGE value="Adding POM to ProductsPage and change to TDD instanced of BDD." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding POM to ProductsPage and change to TDD instanced of BDD." />
+    <MESSAGE value="Upgraded to Java 17 to use Jenkins" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgraded to Java 17 to use Jenkins" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
