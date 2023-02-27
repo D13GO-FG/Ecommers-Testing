@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89987299-ae6a-4fc6-b25d-fb20f6a0ce6d" name="Changes" comment="Learning concepts of Rest Assured: cookies, headers, parsing json, query parameters and POJO.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Learning/authentications.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Learning/fileUploadAndDownload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Learning/jsonSchemaValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Learning/parsingXmlResponseData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Learning/serializationDeserialization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Learning/xmlSchemaValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testFiles/Test_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testFiles/Test_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/travelerXsdSchema.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/usersJsonSchema.json" afterDir="false" />
+    <list default="true" id="89987299-ae6a-4fc6-b25d-fb20f6a0ce6d" name="Changes" comment="Learning concepts of Rest Assured: json and xml schema, file upload, serialization and deserialization and authentications.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Learning/fakerDataGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Learning/authentications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Learning/authentications.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +54,7 @@
       <recent name="D:\2022\Java Projects\ecommers-tests\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.authentications.testBearerTokenAuthentication">
+  <component name="RunManager" selected="TestNG.fakerDataGenerator">
     <configuration name="authentications" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ecommers-tests" />
       <extension name="coverage">
@@ -116,7 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="serializationDeserialization" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="fakerDataGenerator" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ecommers-tests" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +117,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Learning" />
-      <option name="MAIN_CLASS_NAME" value="Learning.serializationDeserialization" />
+      <option name="MAIN_CLASS_NAME" value="Learning.fakerDataGenerator" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -153,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.fakerDataGenerator" />
         <item itemvalue="TestNG.authentications.testBearerTokenAuthentication" />
         <item itemvalue="TestNG.authentications" />
         <item itemvalue="TestNG.authentications.digestAuthentication" />
         <item itemvalue="TestNG.serializationDeserialization.convertJson2Pojo" />
-        <item itemvalue="TestNG.serializationDeserialization" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677406450220</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Learning concepts of Rest Assured: json and xml schema, file upload, serialization and deserialization and authentications.">
+      <created>1677489167150</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677489167150</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,7 +225,8 @@
     <MESSAGE value="Upgraded to Java 17 to use Jenkins" />
     <MESSAGE value="Added test cases for API testing of the basic endpoints such as get, post, put and delete a product." />
     <MESSAGE value="Learning concepts of Rest Assured: cookies, headers, parsing json, query parameters and POJO." />
-    <option name="LAST_COMMIT_MESSAGE" value="Learning concepts of Rest Assured: cookies, headers, parsing json, query parameters and POJO." />
+    <MESSAGE value="Learning concepts of Rest Assured: json and xml schema, file upload, serialization and deserialization and authentications." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learning concepts of Rest Assured: json and xml schema, file upload, serialization and deserialization and authentications." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
