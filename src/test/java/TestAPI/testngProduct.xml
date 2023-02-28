@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="TestCreateProduct">
+        <classes>
+            <class name="TestAPI.createProduct"/>
+        </classes>
+    </test>
+    <test name="TestGetProduct">
+        <classes>
+            <class name="TestAPI.getProduct"/>
+        </classes>
+    </test>
+    <test name="TestUpdateProduct">
+        <classes>
+            <class name="TestAPI.updateProduct"/>
+        </classes>
+    </test>
+    <test name="TestDeleteProduct">
+        <classes>
+            <class name="TestAPI.deleteProduct"/>
+        </classes>
+    </test>
+</suite>

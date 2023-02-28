@@ -1,21 +1,23 @@
 package TestAPI;
 
-import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
+import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
 
-public class TestDelete {
+public class deleteProduct {
     ValidatableResponse validatableResponse;
     @Test
-    public void deleteProduct(){
+    public void testDeleteProduct(ITestContext context){
+        int id = (int) context.getSuite().getAttribute("id");
+
         validatableResponse = given()
-                .baseUri("https://api.escuelajs.co/api/v1/")
-                .contentType(ContentType.JSON)
+                .contentType("application/json")
+                .pathParams("id", id)
                 .when()
-                .delete("products/259")
+                .delete("https://api.escuelajs.co/api/v1/products/{id}")
                 .then()
                 .assertThat()
                 .statusCode(200).body(equalTo("true"));

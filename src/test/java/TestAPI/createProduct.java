@@ -2,32 +2,32 @@ package TestAPI;
 
 import dataObjects.ItemDetails;
 import io.restassured.response.ValidatableResponse;
+import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
-import java.util.Arrays;
+import java.util.List;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.core.IsIterableContaining.hasItem;
 import static org.hamcrest.core.IsNull.notNullValue;
 
-public class TestPost {
+public class createProduct {
     ValidatableResponse validatableResponse;
     @Test
-    public void postProduct(){
-        String endpoint = "https://api.escuelajs.co/api/v1/products/";
-        ItemDetails pikachuDetails = new ItemDetails(
+    public void testCreateProduct(ITestContext context){
+        ItemDetails data = new ItemDetails(
                 "Pikachu pijana",
                 500,
                 "Pijamas Unisexo Franela Adulto Cosplay Pikachu",
                 1,
-                Arrays.asList("https://www.dhresource.com/albu_844327653_00/temp2.0x0.jpg")
+                List.of("https://www.dhresource.com/albu_844327653_00/temp2.0x0.jpg")
         );
         validatableResponse = given()
                 .contentType("application/json")
-                .body(pikachuDetails)
+                .body(data)
                 .when()
-                .post(endpoint)
+                .post("https://api.escuelajs.co/api/v1/products/")
                 .then()
                 .assertThat()
                 .statusCode(201)
@@ -39,6 +39,8 @@ public class TestPost {
                 .body("id", notNullValue())
                 .body("creationAt", notNullValue())
                 .body("updatedAt", notNullValue());
-        System.out.println("Response: " + validatableResponse.extract().asPrettyString());
+        int id = validatableResponse.extract().jsonPath().getInt("id");
+        context.getSuite().setAttribute("id", id);
+        System.out.println("Product ID is: " + id);
     }
 }
