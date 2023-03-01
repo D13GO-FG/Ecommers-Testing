@@ -14,6 +14,6 @@ public class LoginTest extends BaseTests{
         loginSteps.typePassword("secret_sauce");
         loginSteps.clickLogin();
         //fail("Forced error");
-        assertEquals(productsSteps.getPageText(), "PRODUCTS", "It's not right page.");
+        assertEquals(productsSteps.getPageText(), "Products", "It's not right page.");
     }
 }
