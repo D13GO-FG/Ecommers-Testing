@@ -20,9 +20,9 @@ public class BaseTests {
 //        System.setProperty("webdriver.edge.driver",
 //                "src/main/resources/browserDrivers/msedgedriver.exe");
 //        driver = new EdgeDriver();
-        FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("--headless");
-        driver = new FirefoxDriver(options);
+        //FirefoxOptions options = new FirefoxOptions();
+        //options.addArguments("--headless");
+        driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://www.saucedemo.com/");
     }
