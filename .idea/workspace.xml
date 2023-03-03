@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89987299-ae6a-4fc6-b25d-fb20f6a0ce6d" name="Changes" comment="Updated pom.xml to pipeline in Jenkins">
-      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="89987299-ae6a-4fc6-b25d-fb20f6a0ce6d" name="Changes" comment="Uploaded Jenkisfile.">
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677811353017</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Uploaded Jenkisfile.">
+      <created>1677811819582</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677811819582</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,7 +235,8 @@
     <MESSAGE value="Learning concepts of Rest Assured: created CRUD API testing." />
     <MESSAGE value="Set up things to CI with Jenkins" />
     <MESSAGE value="Updated pom.xml to pipeline in Jenkins" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated pom.xml to pipeline in Jenkins" />
+    <MESSAGE value="Uploaded Jenkisfile." />
+    <option name="LAST_COMMIT_MESSAGE" value="Uploaded Jenkisfile." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
