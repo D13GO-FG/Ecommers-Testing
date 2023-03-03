@@ -4,6 +4,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -14,13 +16,13 @@ public class BaseTests {
     protected WebDriver driver;
     @BeforeMethod
     public void setUp(){
-        WebDriverManager.edgedriver().setup();
+        WebDriverManager.firefoxdriver().setup();
 //        System.setProperty("webdriver.edge.driver",
 //                "src/main/resources/browserDrivers/msedgedriver.exe");
 //        driver = new EdgeDriver();
-        EdgeOptions options = new EdgeOptions();
+        FirefoxOptions options = new FirefoxOptions();
         options.addArguments("--headless");
-        driver = new EdgeDriver(options);
+        driver = new FirefoxDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://www.saucedemo.com/");
     }
