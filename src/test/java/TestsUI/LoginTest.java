@@ -15,5 +15,6 @@ public class LoginTest extends BaseTests{
         loginSteps.clickLogin();
         //fail("Forced error");
         assertEquals(productsSteps.getPageText(), "Products", "It's not right page.");
+        System.out.println("Done");
     }
 }
