@@ -19,12 +19,14 @@ public class LoginSteps extends BaseSteps{
     public void typeUsername(String username){
         WebElement usernameInput = new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(loginPage.getInputUserName()));
         //loginPage.getInputUserName().sendKeys(username);
+        usernameInput.clear();
         usernameInput.sendKeys(username);
     }
 
     public void typePassword(String password){
         WebElement passwordInput = new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(loginPage.getInputPassword()));
         //loginPage.getInputPassword().sendKeys(password);
+        passwordInput.clear();
         passwordInput.sendKeys(password);
     }
 

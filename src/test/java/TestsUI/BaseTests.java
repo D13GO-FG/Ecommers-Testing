@@ -2,33 +2,30 @@ package TestsUI;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
 public class BaseTests {
     protected WebDriver driver;
-    @BeforeMethod
+    @BeforeClass
     public void setUp(){
         WebDriverManager.firefoxdriver().setup();
 //        System.setProperty("webdriver.edge.driver",
 //                "src/main/resources/browserDrivers/msedgedriver.exe");
 //        driver = new EdgeDriver();
-        //FirefoxOptions options = new FirefoxOptions();
-        //options.addArguments("--headless");
-        driver = new FirefoxDriver();
+        FirefoxOptions options = new FirefoxOptions();
+        options.addArguments("--headless");
+        driver = new FirefoxDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://www.saucedemo.com/");
     }
 
-    @AfterMethod
-    public void teardown(ITestResult result){
+    @AfterClass
+    public void teardown(){
 //        if (result.getStatus() == ITestResult.FAILURE) {
 //            FailureManager failureManager = new FailureManager(driver);
 //            failureManager.takePngScreenshot(result.getName());
