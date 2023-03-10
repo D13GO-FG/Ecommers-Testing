@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89987299-ae6a-4fc6-b25d-fb20f6a0ce6d" name="Changes" comment="Probe fix error in pipeline.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestsUI/XLUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/dataFiles/loginData.xlsx" afterDir="false" />
+    <list default="true" id="89987299-ae6a-4fc6-b25d-fb20f6a0ce6d" name="Changes" comment="Data Driven Testing practice.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestsData/DataVerificationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestsUI/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestsUI/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestsUI/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestsUI/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,17 +58,7 @@
       <recent name="D:\2022\Java Projects\ecommers-tests\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest">
-    <configuration name="D:/2022/Java Projects/ecommers-tests/src/test/java/Learning/chaining/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ecommers-tests" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Learning/chaining/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.DataVerificationTest">
     <configuration name="D:/2022/Java Projects/ecommers-tests/src/test/java/TestAPI/testngProduct.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ecommers-tests" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/TestAPI/testngProduct.xml" />
@@ -103,6 +89,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DataVerificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ecommers-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestsData.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestsData" />
+      <option name="MAIN_CLASS_NAME" value="TestsData.DataVerificationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ecommers-tests" />
       <extension name="coverage">
@@ -122,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DataVerificationTest" />
         <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.D:/2022/Java Projects/ecommers-tests/testng.xml" />
         <item itemvalue="TestNG.D:/2022/Java Projects/ecommers-tests/testngProduct.xml" />
         <item itemvalue="TestNG.D:/2022/Java Projects/ecommers-tests/src/test/java/TestAPI/testngProduct.xml" />
-        <item itemvalue="TestNG.D:/2022/Java Projects/ecommers-tests/src/test/java/Learning/chaining/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677835786131</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Data Driven Testing practice.">
+      <created>1678067838507</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1678067838507</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,7 +321,8 @@
     <MESSAGE value="Updated Jenkinsfile and WebDriverManager in BaseTests to Firebox" />
     <MESSAGE value="Probe error in pipeline." />
     <MESSAGE value="Probe fix error in pipeline." />
-    <option name="LAST_COMMIT_MESSAGE" value="Probe fix error in pipeline." />
+    <MESSAGE value="Data Driven Testing practice." />
+    <option name="LAST_COMMIT_MESSAGE" value="Data Driven Testing practice." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
